@@ -1,19 +1,19 @@
 # London Bike Rides Dashboard and Data Cleaning Project
 
 ## Overview
-This project focuses on analyzing and visualizing data related to bike rides in London. The dataset spans from January 2015 to January 2017 and includes metrics such as temperature, wind speed, and ride counts. The dashboard and data cleaning process were implemented using Tableau and Python, respectively.
+This project focuses on analyzing and visualizing data related to bike rides in London. The dataset spans from January 2015 to January 2017 and includes metrics: temperature, wind speed, and ride counts. The dashboard and data cleaning process were implemented using Tableau and Python, respectively.
 
 ## Dashboard
 The interactive dashboard, published using Tableau, provides insights into:
-- **Total bike rides**: 19,359,333 rides January 2015 to January 2017.
+- **Total bike rides**: 19,359,333 rides in the period.
 - **Temperature vs. Wind Speed**: A heatmap comparing the distribution of bike rides across varying temperatures and wind speeds.
 - **Trends over time**: A line graph showing ride trends across the timeline, with a moving average feature for better trend analysis.
 
 ### Key Features
 - Dynamic filters for exploring specific time periods.
-- Dynamic adjustments for exploring the impact of difference moving average on the trend line.
+- Dynamic adjustments for exploring the impact of different moving average on the trend line.
 - Clear visualization of the impact of weather conditions on bike rides.
-- Intuitive interface for analyzing large datasets.
+- All metrics are sync based on the time period being selected 
 
 ## Data Cleaning
 The data cleaning process was performed using Python in a Jupyter Notebook. Below are the key steps:
@@ -46,10 +46,6 @@ The data cleaning process was performed using Python in a Jupyter Notebook. Belo
      bikes.shape
      ```
 
-4. **Counting Unique Values in a Column**:
-   ```python
-   bikes.weather_code.value_counts()
-   ```
 
 ## File Structure
 - `london-bike-sharing-dataset.zip`: Raw dataset.
